@@ -1,0 +1,137 @@
+.senden{
+  background: #8BACBD;
+  color: #fff;
+  float: right;
+  margin: 0 0 0 0;
+  margin-top: auto;
+  margin-bottom: auto;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  position: absolute;
+  min-height: 100px;
+  bottom: calc(40vh + 64px);
+  overflow: hidden;
+  width: 15%;
+  right: 0;
+  font-size: 3em;
+}
+#editControls {
+  text-align:center;
+  padding:5px;
+  margin:5px;
+}
+#editor{
+  min-height: 100px;
+  postion: absolute;
+  top: 50px;
+  overflow: hidden;
+  margin-top: auto;
+  margin-bottom: auto;
+  float: left;
+}
+#editor .emoji{
+  padding-right: 10px;
+  height: 72px;
+  
+}
+
+#output {
+  width:99.7%;
+  height:100px
+}
+
+a:link {text-decoration:none;}
+a:visited {text-decoration:none;}
+a:hover {text-decoration:none;}
+a:active {text-decoration:none;}
+#picker x img{
+  height: 50px;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-top: 10px;
+}
+#picker {
+  position: absolute;
+  bottom: 0px;
+  background: #d0d5d8;
+  width: 100%;
+  height: 40%;
+  margin: 0 0 0 0;
+  
+}
+
+#emojinav {
+    background: #d0d5d8;
+    position: absolute;
+    width: 100%;
+    font-size: 2em;
+    text-align: center;
+    vertical-align: middle;
+    padding: 0 0 0 0;
+    bottom: 36vh;
+}
+.navBTN{
+  positio: relative;
+  width: 15%;
+  float: right;
+  color: #eef2f4;
+  margin: 0 0 0 0;
+  padding: 15px 0 0 0;
+  height: 40px;
+}
+#cat2{
+  display: none;
+}
+#cat3{
+  display: none;
+}
+#sponsoredNIKE{
+  display: none;
+}
+#sponsoredKIM{
+  display: none;
+}
+#innerpicker {
+  overflow: scroll;
+  position: absolute;
+  height: 10vh;
+  bottom: 0;
+  background: #EAEFF2;
+  text-align: center;
+  width: 58%;
+}
+#msgfield {
+  background: #EEEEEE;
+  margin-top: auto;
+  margin-bottom: auto;
+  padding-left: 5px;
+  position: absolute;
+  min-height: 72px;
+  bottom: calc(40vh + 64px);
+  overflow: hidden;
+  float: left;
+  width: 85%;
+}
+@import url(http://fonts.googleapis.com/css?family=Indie+Flower);
+* {
+  margin: 0;
+  padding: 0;
+}
+.info {
+  border-radius: 5px;
+  padding: 5px 25px;
+  font-size: 15px;
+  text-decoration: none;
+  margin: 5px;
+  color: #fff;
+  position: relative;
+  display: inline-block;
+  text-decoration: none;
+  text-align: justify;
+}
+
+.yellow {
+  background-color: #f1c40f;
+  box-shadow: 0px 5px 0px 0px #D8AB00;
+}

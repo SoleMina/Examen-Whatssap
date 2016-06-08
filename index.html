@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+	  	<meta charset="utf-8">
+	  	<title>Whatsapp Web</title>
+	  	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	  	<meta name="viewport" content="width=device-width, initial-scale=1">
+      <script type="text/javascript" src="js/jquery.min.js"></script>
+	  	<link rel="stylesheet" href="css/grid-system.css" type="text/css">
+	  	<link rel="shortcut icon" href="image/favicon.png" type="image/png">
+	  	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,600%7CRoboto:300,400,500" media="all">
+      <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css">
+      <link rel="stylesheet" href="css/ionicons.min.css">
+      <link rel="stylesheet" href="css/icomoon.css">
+	  	<link rel="stylesheet" href="css/main.css">
+      <link rel="stylesheet" href="css/style.css">
+      <link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css'>
+	  	<!-- Vincula los CSS que faltan -->
+	</head>
+	<body>
+		<div class="fase1">
+    </div>
+    <div class="container">
+        <div class="row">
+          <div class="col-5 without">
+            <div class="caja">
+                  <img class="img" src="image/gian.jpg">
+                  <span class="iconos">
+                  <i class="icon-message"></i><i class="icon-dots-three-vertical"></i>
+                  </span>
+            </div>
+            <div class="cajilla">
+                      <div class="Search">
+                        <form class="action" action="">
+                        <input id="search" class="buscador" type="search" name="nombre" placeholder="Buscar o empezar un nuevo chat">
+                        </form>
+                      </div>
+            </div>
+            <div class="caja big" id="boxunico">
+                  <div class="cajilla">
+                     <img class="imagencilla" src="image/logocodeacademy.png">
+                     <h4 id ="filtrado" class="parrafoprincipal main" data="0">Laboratoria Perú</h4>
+                     <p class="parrafo">Aldo: Dale, dale.</p>
+                     <p class="time">14:25</p>
+                   </div>
+                   <div class="cajilla">
+                     <img id="raymi" class="img1" src="image/raymi.jpg" onclick="limpiar(), usuario1()">
+                     <h4 id ="filtrado" class="parrafoprincipal" data="1">Raymi Saldomando</h4>
+                     <p class="parrafo">La clase va bien!</p>
+                     <p class="time">11:25</p>
+                   </div>
+                   <div class="cajilla">
+                     <img class="img1" src="image/mariana.jpg" onclick="limpiar(this), usuario()" name="prueba" >
+                     <h4 class="parrafoprincipal" data="2">Mariana Costa</h4>
+                     <p class="parrafo">El panel de speakers está buenazo!</p>
+                     <p class="time">09:25</p>
+                   </div>
+                   <div class="cajilla">
+                     <img class="img1" src="image/anamaria.jpg" onclick="limpiar(this), usuario2()">
+                     <h4 class="parrafoprincipal" data="3">Ana María Martínez Franklin</h4>
+                     <p class="parrafo">Pues dale chamo!</p>
+                     <p class="time">Ayer</p>
+                   </div>
+                   <div class="cajilla">
+                     <img class="img1" src="image/rodulfo.jpg" onclick="limpiar(this), usuario3()">
+                     <h4 class="parrafoprincipal" data="4">Rodulfo Prieto</h4>
+                     <p class="parrafo">¿Cómo van las chicas?</p>
+                     <p class="time">Martes</p>
+                   </div>
+                   <div class="cajilla">
+                     <img class="img1" src="image/andrea.jpg" onclick="limpiar(this), usuario4()">
+                     <h4 class="parrafoprincipal" data="5">Andrea Lamas</h4>
+                     <p class="parrafo">Hoy me tocan clases de canto, yeee!</p>
+                     <p class="time">Lunes</p>
+                   </div>
+                   <div class="cajilla">
+                     <img class="img1" src="image/mariapaula.jpg" onclick="limpiar(this), usuario5()">
+                     <h4 class="parrafoprincipal" data="6">María Paula Rivarola</h4>
+                     <p class="parrafo">Wuju! esto me encanta!! en verdad!!</p>
+                     <p class="time three">13/01/2016</p>
+                   </div>
+                   <div class="cajilla">
+                     <img class="img1" src="image/katy.jpg" onclick="limpiar(this), usuario6()">
+                     <h4 class="parrafoprincipal" data="7">Katy Sanchez</h4>
+                     <p class="parrafo">No te preocupes tengo el salón bajo control.</p>
+                     <p class="time three">11/01/2016</p>
+                   </div>
+                   <div class="cajilla">
+                     <img class="img1" src="image/aldo.jpg" onclick="limpiar(this), usuario7()">
+                     <h4 class="parrafoprincipal" data="8">Aldo alfaro</h4>
+                     <p class="parrafo food">Vao a comer?</p>
+                     <p class="time three">03/01/2016</p>
+                   </div>
+            </div>
+          </div>
+          <div class="col-7 without">
+            <div class="caja1">
+                  <img class="img2" src="image/logocodeacademy.png" id="megabox" name="prueba">
+                  <p class="parrafoprincipal" id="principaltext">Laboratoria Perú<span class="iconos1">
+                  <i class="icon-attachment"></i><i class="icon-dots-three-vertical"></i>
+                  </span></p>
+                  <p class="parrafo manejo" id="secondtext">Ana María, Aldo, Gian, Mariana, Pappu, Tú.</p>
+            </div>
+            <div class="bigger" id="bigger">
+              <ul id="eliminar">
+                  <li class="right chateo" id="chatear">
+                     <p class="parrafoprincipal right color">Andrea Lamas</p>
+                     <p class="parrafo1">Chicos han visto el nuevo corte de Aldo?</p>
+                     <span class="time1">11:12</span>
+                  </li>
+                  <li class="right true" id="chatear1">
+                     <p class="parrafoprincipal right true purple">Mariana Costa</p>
+                     <p class="parrafo1">¿Finalmente se cortó?</p>
+                     <span class="time1">11:13</span>
+                  </li>
+                  <li class="right true" id="chatear2">
+                     <p class="parrafoprincipal right true color">Maria Paula Rivarola</p>
+                     <p class="parrafo1">Jajaja sii! finamente se cortó!!</p>
+                     <span class="time1">11:14</span>
+                  </li>
+                  <li class="right true sn" id="chatear3">
+                     <p class="parrafo1 chatting">Antes parecía mufasa jajajaja!!</p>
+                     <span class="time2">11:14</span>
+                  </li>
+                  <li class="right true sn" id="chatear4">
+                     <p class="parrafo1 chatting">Ahora si está decente.</p>
+                     <span class="time2">11:18</span>
+                  </li>
+                  <li class="right true" id="chatear5">
+                     <p class="parrafoprincipal right color true">Andrea Lamas</p>
+                     <p class="parrafo1">¿Por qué se lo habrá cortado?</p>
+                     <span class="time1">11:20</span>
+                  </li>
+                  <section id="what">
+                  </section>
+              </ul>
+            </div>
+                  <div class="right final">
+                    <div class="cajilla finish">
+                    <div class="formulario" action="">
+                      <i class="icon-insert_emoticon" id="emoticon" onclick="emoji()"></i>
+                      <input class="chat" id ="chat" 
+                      type="search" name="nombre" placeholder="Escribe tu mensaje aquí"></input>
+                      <button type="button" id="tweetButton" onclick="añadir()"class="btn btn-primary"><i class="glyphicon glyphicon-plus"></i>Enter</button>
+                      <i class="icon-mic"></i>
+                    </div>
+                    </div>
+                  </div>
+                  <div id="place">
+                  </div>
+                  <div id="innerpicker">
+                    <cat id="cat1">
+                      <x onclick='onButtonClick("😀")' href='javascript:void(0)'>😀</x>
+                      <x onclick='onButtonClick("😁")' href='javascript:void(0)'>😁</x>
+                      <x onclick='onButtonClick("😂")' href='javascript:void(0)'>😂</x>
+                      <x onclick='onButtonClick("😃")' href='javascript:void(0)'>😃</x>
+                      <x onclick='onButtonClick("😄")' href='javascript:void(0)'>😄</x>
+                      <x onclick='onButtonClick("😅")' href='javascript:void(0)'>😅</x>
+                      <x onclick='onButtonClick("😆")' href='javascript:void(0)'>😆</x>
+                      <x onclick='onButtonClick("😉")' href='javascript:void(0)'>😉</x>
+                      <x onclick='onButtonClick("😊")' href='javascript:void(0)'>😊</x>
+                      <x onclick='onButtonClick("😋")' href='javascript:void(0)'>😋</x>
+                      <x onclick='onButtonClick("😎")' href='javascript:void(0)'>😎</x>
+                      <x onclick='onButtonClick("😍")' href='javascript:void(0)'>😍</x>
+                      <x onclick='onButtonClick("😘")' href='javascript:void(0)'>😘</x>
+                      <x onclick='onButtonClick("😗")' href='javascript:void(0)'>😗</x>
+                      <x onclick='onButtonClick("😙")' href='javascript:void(0)'>😙</x>
+                      <x onclick='onButtonClick("😚")' href='javascript:void(0)'>😚</x>
+                      <x onclick='onButtonClick("😏")' href='javascript:void(0)'>😏</x>
+                      <x onclick='onButtonClick("😣")' href='javascript:void(0)'>😣</x>
+                      <x onclick='onButtonClick("😥")' href='javascript:void(0)'>😥</x>
+                      <x onclick='onButtonClick("😮")' href='javascript:void(0)'>😮</x>
+                      <x onclick='onButtonClick("😯")' href='javascript:void(0)'>😯</x>
+                      <x onclick='onButtonClick("😪")' href='javascript:void(0)'>😪</x>
+                      <x onclick='onButtonClick("😫")' href='javascript:void(0)'>😫</x>
+                      <x onclick='onButtonClick("😴")' href='javascript:void(0)'>😴</x>
+                      <x onclick='onButtonClick("😌")' href='javascript:void(0)'>😌</x>
+                      <x onclick='onButtonClick("😛")' href='javascript:void(0)'>😛</x>
+                      <x onclick='onButtonClick("😜")' href='javascript:void(0)'>😜</x>
+                      <x onclick='onButtonClick("😝")' href='javascript:void(0)'>😝</x>
+                      <x onclick='onButtonClick("😒")' href='javascript:void(0)'>😒</x>
+                      <x onclick='onButtonClick("😓")' href='javascript:void(0)'>😓</x>
+                      <x onclick='onButtonClick("😔")' href='javascript:void(0)'>😔</x>
+                      <x onclick='onButtonClick("😕")' href='javascript:void(0)'>😕</x>
+                      <x onclick='onButtonClick("🤑")' href='javascript:void(0)'>🤑</x>
+                      <x onclick='onButtonClick("😲")' href='javascript:void(0)'>😲</x>
+                      <x onclick='onButtonClick("😷")' href='javascript:void(0)'>😷</x>
+                      <x onclick='onButtonClick("🙁")' href='javascript:void(0)'>🙁</x>
+                      <x onclick='onButtonClick("😖")' href='javascript:void(0)'>😖</x>
+                      <x onclick='onButtonClick("😞")' href='javascript:void(0)'>😞</x>
+                      <x onclick='onButtonClick("😟")' href='javascript:void(0)'>😟</x>
+                      <x onclick='onButtonClick("😤")' href='javascript:void(0)'>😤</x>
+                      <x onclick='onButtonClick("😢")' href='javascript:void(0)'>😢</x>
+                      <x onclick='onButtonClick("😭")' href='javascript:void(0)'>😭</x>
+                      <x onclick='onButtonClick("😦")' href='javascript:void(0)'>😦</x>
+                      <x onclick='onButtonClick("😧")' href='javascript:void(0)'>😧</x>
+                      <x onclick='onButtonClick("😨")' href='javascript:void(0)'>😨</x>
+                      <x onclick='onButtonClick("😩")' href='javascript:void(0)'>😩</x>
+                      <x onclick='onButtonClick("😬")' href='javascript:void(0)'>😬</x>
+                      <x onclick='onButtonClick("😰")' href='javascript:void(0)'>😰</x>
+                      <x onclick='onButtonClick("😱")' href='javascript:void(0)'>😱</x>
+                      <x onclick='onButtonClick("😳")' href='javascript:void(0)'>😳</x>
+                      <x onclick='onButtonClick("😵")' href='javascript:void(0)'>😵</x>
+                      <x onclick='onButtonClick("😡")' href='javascript:void(0)'>😡</x>
+                      <x onclick='onButtonClick("😠")' href='javascript:void(0)'>😠</x>
+                      <x onclick='onButtonClick("😈")' href='javascript:void(0)'>😈</x>
+                      <x onclick='onButtonClick("👿")' href='javascript:void(0)'>👿</x>
+                      <x onclick='onButtonClick("👹")' href='javascript:void(0)'>👹</x>
+
+                      <x onclick='onButtonClick("🐸")' href='javascript:void(0)'>🐸</x>
+                      <x onclick='onButtonClick("🐊")' href='javascript:void(0)'>🐊</x>
+                      <x onclick='onButtonClick("🐢")' href='javascript:void(0)'>🐢</x>
+                      <x onclick='onButtonClick("🐍")' href='javascript:void(0)'>🐍</x>
+                      <x onclick='onButtonClick("🐲")' href='javascript:void(0)'>🐲</x>
+                      <x onclick='onButtonClick("🐉")' href='javascript:void(0)'>🐉</x>
+                      <x onclick='onButtonClick("🐳")' href='javascript:void(0)'>🐳</x>
+                      <x onclick='onButtonClick("🐋")' href='javascript:void(0)'>🐋</x>
+                      <x onclick='onButtonClick("🐬")' href='javascript:void(0)'>🐬</x>
+                      <x onclick='onButtonClick("🐟")' href='javascript:void(0)'>🐟</x>
+                      <x onclick='onButtonClick("🐠")' href='javascript:void(0)'>🐠</x>
+                      <x onclick='onButtonClick("🐡")' href='javascript:void(0)'>🐡</x>
+                      <x onclick='onButtonClick("🐙")' href='javascript:void(0)'>🐙</x>
+                      <x onclick='onButtonClick("🐚")' href='javascript:void(0)'>🐚</x>
+                      <x onclick='onButtonClick("🦀")' href='javascript:void(0)'>🦀</x>
+                      <x onclick='onButtonClick("🐌")' href='javascript:void(0)'>🐌</x>
+                      <x onclick='onButtonClick("🐛")' href='javascript:void(0)'>🐛</x>
+                      <x onclick='onButtonClick("🐜")' href='javascript:void(0)'>🐜</x>
+                      <x onclick='onButtonClick("🐝")' href='javascript:void(0)'>🐝</x>
+                      <x onclick='onButtonClick("🐞")' href='javascript:void(0)'>🐞</x>
+
+                      <x onclick='onButtonClick("💇")' href='javascript:void(0)'>💇</x>
+                      <x onclick='onButtonClick("💇🏻")' href='javascript:void(0)'>💇🏻</x>
+
+                      <x onclick='onButtonClick("🏃")' href='javascript:void(0)'>🏃</x>
+                      <x onclick='onButtonClick("🏃🏻")' href='javascript:void(0)'>🏃🏻</x>
+                      <x onclick='onButtonClick("🏃🏼")' href='javascript:void(0)'>🏃🏼</x>
+                      <x onclick='onButtonClick("🏃🏽")' href='javascript:void(0)'>🏃🏽</x>
+                      <x onclick='onButtonClick("🏃🏾")' href='javascript:void(0)'>🏃🏾</x>
+
+                    </cat>
+                  </div>
+            </div>
+          </div>
+        </div>
+    <script src="js/main.js"></script>
+    <script src="js/lista.js"></script>
+    <script src="js/filtrar.js"></script>
+    <script src="js/search.js"></script>
+	</body>
+</html>
